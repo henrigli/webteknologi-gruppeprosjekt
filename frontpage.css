@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto';font-size: 22px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+
+
+}
+
+body, html {
+    height: 100%;
+    
+}
+
+h1 {
+    font-size: 150px;
+}
+
+.blank {
+    width: 50%;
+    height: 75%;
+    margin: auto;
+
+}
+
+.img {
+
+    height: 100%;
+  
+    /* Creating the parallax scrolling effect. I used a tutorial from W3Schools,
+    and modified it to include several photos. 
+    Link: https://www.w3schools.com/howto/howto_css_parallax.asp */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #img1 {
+    background-image: url("img/img1.jpg");
+  }
+
+  #img2 {
+    background-image: url("img/img2.jpg");
+  }
+
+  #img3 {
+      background-image: url("img/img3.jpg")
+  }
+
+
+
+
+/* SCROLL FADE IN ANIMATION */
+#arrowdown {
+  width: 10%;
+  margin-top: 88vh;
+  animation-duration: 1s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+
+}
+
+
+@keyframes scrolldown {
+    from {
+      transform: scale(.85,.85)}
+    to {
+      transform: scale(1,1);
+    }
+    
+}
